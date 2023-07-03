@@ -1,5 +1,9 @@
-import express from 'express';
+import 'reflect-metadata';
+import 'dotenv/config';
+import 'shared/container';
 import 'express-async-errors';
+
+import express from 'express';
 import cors from 'cors';
 import { routes } from './routes';
 import { handlerError } from './middlewares/handlerError';
